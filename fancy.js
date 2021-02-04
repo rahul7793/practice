@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script type="application/javascript">
   "use strict";
   console.log("tesing scripttags github");
 </script>
