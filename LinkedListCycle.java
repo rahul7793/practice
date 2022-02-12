@@ -41,6 +41,7 @@
  */
 public class Solution {
     public boolean hasCycle(ListNode head) {
+//      using hashtable
         Set<ListNode> set = new HashSet<>();
         while(head != null){
             if(set.add(head))
@@ -49,6 +50,18 @@ public class Solution {
                 return true;
         }
         return false;
+//      Floyd's cycle algo
+//       if(head == null)
+//             return false;
+//         ListNode slow = head;
+//         ListNode fast = head.next;
+//         while(slow != fast){
+//             if(fast == null || fast.next == null)
+//                 return false;
+//             slow = slow.next;
+//             fast = fast.next.next;
+//         }
+//         return true;
     }
 }/**
  * Definition for singly-linked list.
